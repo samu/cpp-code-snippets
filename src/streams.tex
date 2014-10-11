@@ -1,0 +1,46 @@
+\section{Streams}
+
+% cin, cout, manipulatoren wie endl
+% istream, ostream
+% istringstream
+% << und >> operatoren auf verschiedene typen
+
+% Kleine info zu flush:
+% Output is generally buffered before it's written
+% to the intended device. That way, when writing to
+% slow to access devices(like files), it doesn't have
+% to access the device after every single character.
+
+% Flushing means emptying the buffer and actually
+% writing it to the device.
+\subsection{Handling Invalid Input}
+
+\subsubsection{Escape After Fail}
+\displayCode{Misc/streams/handling_invalid_input/reading_integers.h}
+
+\subsubsection{Continue After Fail}
+\displayCode{Misc/streams/handling_invalid_input/reading_integers_2.h}
+
+
+\subsection{Manipulators}
+
+\subsubsection{boolalpha}
+\displayCode{Misc/streams/manipulators/boolalpha.h}
+
+\subsubsection{skipws}
+\displayCode{Misc/streams/manipulators/skipws.h}
+
+\subsubsection{uppercase}
+\displayCode{Misc/streams/manipulators/uppercase.h}
+
+\subsubsection{oct, hex, dec}
+\displayCode{Misc/streams/manipulators/oct_hex_dec.h}
+
+\subsubsection{setw}
+\displayCode{Misc/streams/manipulators/setw.h}
+
+\subsubsection{left, right, internal}
+\displayCode{Misc/streams/manipulators/left_right_internal.h}
+
+\subsubsection{setprecision, scientific, fixed}
+\displayCode{Misc/streams/manipulators/setprecision_scientific_fixed.h}

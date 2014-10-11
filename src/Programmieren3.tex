@@ -1,0 +1,99 @@
+\documentclass{article}
+
+\topmargin = 1pt
+\headheight = 20pt
+\headsep = 10pt
+\oddsidemargin = 1pt
+\marginparwidth = 1pt
+\textwidth = 455pt
+\textheight = 600pt
+
+\usepackage{makeidx}
+\usepackage{minted}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{hyperref} % must come last
+
+\pagestyle{fancy}
+
+% \usemintedstyle{tango}
+
+% \definecolor{bg}{rgb}{0.95, 0.95, 0.95}
+\definecolor{bg}{rgb}{1, 1, 1}
+
+\usetikzlibrary{arrows}
+
+\newcommand{\displayCode}[1] {
+  \inputminted[linenos,
+               bgcolor=bg,
+               frame=lines,
+               fontfamily=courier,
+               fontsize=\small]
+               {c++}
+               {../../#1}
+}
+
+\newcommand{\displayCodeFromTo}[3] {
+  \inputminted[linenos,
+               bgcolor=bg,
+               frame=lines,
+               fontfamily=courier,
+               fontsize=\small,
+               firstnumber=#2,
+               firstline=#2,
+               lastline=#3]
+               {c++}
+               {../../#1}
+}
+
+\newcommand{\includeChapter}[1] {
+  \newpage
+  \input ../src/#1.tex
+}
+
+\newcommand{\paragraphWithLineBreak}[1] {
+  \paragraph{#1} ~\\
+}
+
+
+\begin{document}
+
+  \title{Programmieren 3 Zusammenfassung}
+  \date{11. Januar 2014}
+  \author{Samuel Mueller}
+  \maketitle
+
+  \newpage
+
+  \tableofcontents
+  \newpage
+
+  \includeChapter{terminology}
+
+  \includeChapter{basic_concepts}
+
+  \includeChapter{classes}
+
+  \includeChapter{immutability}
+
+  \includeChapter{streams}
+
+  \includeChapter{iterators}
+
+  \includeChapter{containers}
+
+  \includeChapter{algorithms}
+
+  \includeChapter{bind}
+
+  \includeChapter{templates}
+
+  \includeChapter{references_and_pointers}
+
+  \includeChapter{compile_time_calculation}
+
+  \includeChapter{good_to_know}
+
+  \includeChapter{appendix}
+
+\end{document}

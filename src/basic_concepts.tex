@@ -1,0 +1,93 @@
+% classes
+%   inheritance
+%   calling a super constructor
+
+\section{Basic Concepts}
+  % \subsection{Classes}
+  %   \subsubsection{Static Members}
+  %   \displayCode{Misc/basic_concepts/classes/static_members/main.cpp}
+  %   \displayCode{Misc/basic_concepts/classes/static_members/gem.h}
+  %   \displayCode{Misc/basic_concepts/classes/static_members/gem.cpp}
+  %   \newpage
+  %   \subsubsection{Headerfile And Implementation}
+  %   \displayCode{Misc/basic_concepts/classes/headerfile_and_implementation/leprechaun.h}
+  %   \displayCode{Misc/basic_concepts/classes/headerfile_and_implementation/leprechaun.cpp}
+  % \newpage
+
+  \subsection{Functions}
+    \subsubsection{A good function ...}
+    \begin{itemize}
+      \item does exactly one thing (also known as high cohesion)
+      \item has a name that describes its behaviour
+      \item has only few parameters (up to 3 is preferable, no more than 5)
+      \item consists of only a few lines of code
+      \item does not contain deeply nested constructs (if/else, loops etc.)
+      \item guarantees a clear result (also known as contract)
+    \end{itemize}
+    \subsubsection{return statement}
+    \displayCode{Misc/basic_concepts/functions/return_statement.h}
+    \subsubsection{function as argument}
+    \displayCode{Misc/basic_concepts/functions/function_as_argument.h}
+
+  \newpage
+  \subsection{Exceptions}
+    \begin{itemize}
+      \item Exceptions in C++ have very small overhead. They don't provide additional
+            information such as a stack trace or source code location
+      \item Everything that is copyable can be thrown
+      \item All exceptions are unchecked
+    \end{itemize}
+
+    \subsubsection{Throwing Anything}
+    \displayCode{Misc/basic_concepts/exceptions/throwing_anything.h}
+
+    \subsubsection{Throwing Standard Exceptions}
+    \displayCode{Misc/basic_concepts/exceptions/throwing_std_exceptions.h}
+
+    \subsubsection{Function Followed By Try-Catch}
+    \displayCode{Misc/basic_concepts/exceptions/function_followed_by_try_catch.h}
+
+  \newpage
+  \subsection{Operator Overloading}
+    \subsubsection{Basic Example}
+    \displayCode{Misc/basic_concepts/operator_overloading/basic_example.h}
+
+    \subsubsection{less than comparable}
+    \displayCode{Misc/basic_concepts/operator_overloading/boost_less_than_comparable.h}
+
+    \subsubsection{Increment Postfix vs. Prefix}
+    \displayCode{Misc/basic_concepts/operator_overloading/increment_postfix_vs_prefix.h}
+
+  \newpage
+  \subsection{Enums}
+
+    \subsubsection{Enums Are Integers}
+    \displayCode{Misc/basic_concepts/enums/enums_are_integers.h}
+
+    \subsubsection{Indices Can Be Defined}
+    \displayCode{Misc/basic_concepts/enums/indices_can_be_defined.h}
+
+    \subsubsection{Casting}
+    \displayCode{Misc/basic_concepts/enums/casting.h}
+
+    \subsubsection{Operator Overloading}
+    \displayCode{Misc/basic_concepts/enums/operator_overloading.h}
+
+    \subsubsection{Example: Toggle Button}
+    \displayCode{Misc/basic_concepts/enums/toggle_button.h}
+    \displayCode{Misc/basic_concepts/enums/toggle_button_demo.h}
+
+  \newpage
+  \subsection{Lambdas}
+    \subsubsection{Basic Examples}
+    \displayCode{Misc/basic_concepts/lambdas/basic_examples/basic_examples.h}
+
+    \subsubsection{Function Objects}
+    \displayCode{Misc/basic_concepts/lambdas/basic_examples/auto_vs_function.h}
+
+    \subsubsection{Capturing}
+    \displayCode{Misc/basic_concepts/lambdas/capturing/capture_for_internal_use.h}
+    \displayCode{Misc/basic_concepts/lambdas/capturing/capture_with_write_access.h}
+    \displayCode{Misc/basic_concepts/lambdas/capturing/capture_everything.h}
+    \displayCode{Misc/basic_concepts/lambdas/capturing/mutable.h}
+
