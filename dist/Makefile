@@ -1,2 +1,2 @@
 default:
-	pdflatex -shell-escape ../src/Programmieren3.tex
+	pdflatex -shell-escape ../src/cpp_code_snippets.tex
